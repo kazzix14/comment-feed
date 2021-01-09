@@ -1,0 +1,36 @@
+[package]
+name = "comment-feed-front-browser"
+version = "0.2.0"
+authors = ["Kazuma Murata <kazzix14@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+log = "0.4"
+strum = "0.17"
+strum_macros = "0.17"
+serde = "1"
+serde_json = "1"
+serde_derive = "1"
+wasm-bindgen = { version = "0.2.69", features = ["serde-serialize"] }
+async_io_stream = "0.1"
+wasm-bindgen-futures = "0.4"
+wasm-logger = "0.2"
+wee_alloc = { version = "0.4.4", optional = true }
+js-sys = "0.3"
+yew = "0.17"
+chrono = { version = "0.4", features = ["serde", "wasmbind"] }
+ws_stream_wasm = { version = "0.6" }
+tokio = { version = "1.0", features = ["rt"] }
+futures = "0.3"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  'KeyboardEvent',
+]

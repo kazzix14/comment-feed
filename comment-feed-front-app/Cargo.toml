@@ -1,0 +1,20 @@
+[package]
+name = "comment-feed-front-app"
+version = "0.1.0"
+authors = ["kazuma murata <kazzix14@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "^1"
+serde_json = "^1"
+serde_derive = "^1"
+log = "^0.4"
+simple_logger = "^1"
+futures = "0.1"
+websocket = "0.26"
+glium = "0.29"
+glium-glyph = "0.10"
+overlay = { git = "https://github.com/maroider/overlay", branch = "feature/borrowed-overlay" }
+rand = "0.8.0"

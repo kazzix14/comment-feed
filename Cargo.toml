@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+    "comment-feed-front-app",
+    "comment-feed-front-browser",
+    "comment-feed-ws-connect",
+    "comment-feed-ws-disconnect",
+    "comment-feed-ws-send-message",
+    "comment-feed-ws-set-channel",
+]
